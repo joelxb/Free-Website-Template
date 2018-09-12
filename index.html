@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <title>INPUT YOUR TITLE </title>
+	 <meta charset="utf-8" />
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	 <meta name="title" content="INPUT YOUR CONTENT" />
+	 <meta name="description" content="INPUT YOUR CONTENT" />
+
+	 <meta property="og:title" content=" " />
+	 <meta property="og:description" content="INPUT YOUR CONTENT" />
+
+	 <script src="js/title.js"></script>
+	 <script src="js/main.js"></script>
+
+	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css" />
+	 <link rel="stylesheet" href="css/animate.css" />
+	 <link rel="stylesheet" href="css/style.css" />
+ </head>
+			</div>
+		</div>
+	</div>
+	 <div id="container">
+		 <main>
+			 <div class="animated fadeInLeft">
+				 <h1><shadow class="name"><a href="#" target="_blank">INPUT YOUR CONTENT</shadow></a></h1>
+				 <h2><shadow> input sample text here</shadow></h2>
+			 </div>
+				 <div class="animated fadeIn2"><center><span class="sub_text2" id="clock"></span></center></div>
+			 </ul>
+			 <div class="animated fadeInUp">
+				 <footer>
+					 <h1><shadow>stem stuffs</shadow><br /></h1>
+					 <h2><shadow><marquee width="75%"><a href="#" target="_blank">INPUT YOUR CONTENT </a> -  <a href="#" target="_blank">INPUT YOUR CONTENT </a></marquee></shadow></h2>
+				 </footer>
+				 <div class="mobile-hide">
+					 <h3><shadow>SINPUT YOUR CONTENT</shadow></h3>
+				 </div>
+			 </div>
+			 <audio autoplay="" loop="" id="song" onloadeddata="setVolume()">
+				 <source src="files/music/rude.mp3" type="audio/mpeg">
+			 </source></audio>
+		 </main>
+	 </div>
+ </body>
+ 
+ <script>
+    update_clock();
+
+    function update_clock() {
+        var currentTime = new Date(),
+            hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes();
+        if (hours > 12) {
+            hours = hours - "12" ;
+	    }
+		
+		if (hours < 12) {
+		    hours = hours;
+			
+	    }
+		
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+
+        var clock_element = document.getElementById("clock");
+
+        clock_element.innerHTML = hours + " : " + minutes;
+    }
+    setInterval(update_clock, 1000);
+
+</script>
+
+</html>
+
+ 
